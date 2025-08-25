@@ -45,7 +45,7 @@ function calcularPontuacao(item, ocorrencias) {
         case "2_2":
             return n <= 3 ? 12 : n <= 6 ? 8 : n <= 9 ? 4 : 0;
         case "2_3":
-            return n === 0 ? 6 : n < 4 ? 4 : n === 4 ? 2 : 0;
+            return n < 2 ? 6 : n < 4 ? 4 : n === 4 ? 2 : 0;
         case "2_4":
             return n < 2 ? 4 : n <= 6 ? 3 : n <= 10 ? 2 : 0;
         case "2_5":
@@ -197,6 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 
 
 
