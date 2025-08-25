@@ -196,3 +196,66 @@ select option {
   opacity: 1;
 }
 
+/* Modal de conferência com estilo diferente */
+.modal-content.review {
+  background-color: #e9dfdfe5;
+  color: #333;
+  text-align: left;
+}
+
+#review-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 15px 0;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+#review-list p {
+  margin: 8px 0;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* Ações do modal */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal-actions button {
+  flex: 1;
+}
+
+/* Loader dentro do botão */
+#confirm-btn {
+  position: relative;
+}
+
+#confirm-btn .btn-loader {
+  display: none;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -9px;
+  margin-left: -9px;
+}
+
+#confirm-btn.loading .btn-text {
+  visibility: hidden;
+}
+
+#confirm-btn.loading .btn-loader {
+  display: inline-block;
+}
+
