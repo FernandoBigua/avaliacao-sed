@@ -29,12 +29,7 @@
       <label>Empresa Terceirizada:
         <select name="empresa">
           <option value="">Selecione</option>
-          <option value="SÓLIDA NUTRIÇÃO LTDA">SÓLIDA NUTRIÇÃO LTDA</option>
-          <option value="G.E.F SERVICOS LTDA">G.E.F SERVICOS LTDA</option>
-          <option value="RISOTOLÂNDIA INDÚSTRIA E COMÉRCIO DE ALIMENTOS LTDA">RISOTOLÂNDIA INDÚSTRIA E COMÉRCIO DE ALIMENTOS LTDA</option>
-          <option value="COSTA OESTE SERVIÇOS LTDA">COSTA OESTE SERVIÇOS LTDA</option>
-          <option value="SEPAT MULTI SERVICE LTDA">SEPAT MULTI SERVICE LTDA</option>
-
+          
         </select>
       </label>
 
@@ -131,14 +126,29 @@
     <p id="status-msg"></p>
   </div>
 
-  <script src="script.js"></script>
+  
   <div id="popup-modal" class="modal">
     <div class="modal-content">
       <span class="close-button">&times;</span>
       <p id="popup-message"></p>
     </div>
 </div>
+<!-- Modal de Conferência -->
+<div id="review-modal" class="modal">
+  <div class="modal-content review">
+    <span class="close-button" id="close-review">&times;</span>
+    <h2>Confirme suas respostas</h2>
+    <div id="review-list"></div>
+    <div class="modal-actions">
+      <button id="back-btn">Voltar e Corrigir</button>
+      <button id="confirm-btn">
+        <span class="btn-text">Confirmar e Enviar</span>
+        <span class="btn-loader"></span>
+      </button>
+    </div>
+  </div>
+</div>
 
+<script src="script.js"></script>
 </body>
 </html>
-
